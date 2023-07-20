@@ -1,0 +1,540 @@
+<html>
+<head>
+<title>Personal Details</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+<style>
+form{
+	width: 550px;
+	height: 155%;
+		padding: 20px 2px;
+		margin: 0px auto;
+  		background-color:lightslategrey;
+		border-radius:20px;
+		text-align: center;
+		margin-top: 80;
+	}
+	select,textarea,input[type=text],
+			[type=password],
+			[type=email],
+			[type=tel],
+			[type=date]{
+		width:50%;
+		outline: none;
+		border: 1px ;
+		padding: 10px 20px;
+		margin-bottom: 10px;
+		border-radius: 20px;
+		background-color: white;
+}
+input[type=file]{padding:10px 20px;
+margin-bottom:10px;}
+
+
+.div1{
+	display:flex;
+	justify-content:space-between;
+	padding-top: 5px;
+}
+label{
+	margin-left:50px;
+	color: navajowhite;
+}
+input,textarea,select{
+	margin-right:30px;
+
+}
+#number{
+	margin-right:30px;
+	padding:7px 39px;
+	border-radius: 25px;
+	margin-top: -4px;
+	text-decoration: none;
+
+}
+}
+h1{
+	text-align:center;
+}
+
+input[type=text],
+			[type=password],
+			[type=email],
+			[type=tel],
+			[type=date],
+	[type=file]
+			{
+
+    align: right;
+    width: 250px; height:30px;
+padding:16px 14px;
+padding-top:10px;}
+
+
+
+
+select{
+
+    width: 250px; height:30px;
+padding:16px 14px;
+padding-top:10px;}
+
+textarea
+			{
+
+    align: right;
+    width: 250px; height:120px;
+padding:16px 14px;
+padding-top:10px;}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.btn {
+  background-color: powderblue;
+  color: black;
+  border-radius: 20px;
+	text-decoration: none;
+  display: inline-block;
+	padding: 8px 16px;
+}
+	.btn:hover {
+	  background-color: lightgrey;
+	  color: black;
+	}
+
+
+
+/*topnav*/
+body{
+	margin:0px;
+	padding:0px;
+}
+body {
+  font-family: sans-serif;
+}
+.logo{
+	height: 50px;
+	width: 150px;
+	margin-top: 5px;
+	margin-left: 2.8rem;
+}
+div.hm{
+	width:100%;
+	height:60px;
+	background-color:lightcyan;
+	position: fixed;
+}
+div.hm ul{
+	color:whitesmoke;
+	padding:0px;
+}
+div.hm ul li{
+    font-size: 22px;
+	list-style-type:none;
+	float:right;
+	padding-left:21px;
+	padding-right:21px;
+line-height:20px;
+border-left:1px solid white;
+margin-top: 6px;
+
+
+}
+div.hm ul li:hover{
+	background-color:lightgrey;
+}
+div.hm a{
+	color: darkmagenta;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+                                   /*side navbar*/
+
+
+.sidebar {
+	margin-top: 4.3%;
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  top: ;
+  left: 0;
+  background-color: papayawhip;
+ overflow-x: hidden;
+ padding-top: 40px;
+ z-index:1;
+ transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+
+
+}
+
+.sidebar a:hover {
+  color: white;
+   background-color:lightsalmon;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menubtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: papayawhip;
+
+  border: none;
+  margin-top: 2.2em;
+  margin-bottom: 2.5em;
+  position: fixed;
+  margin-left: -15px;
+  margin-right: 0;
+}
+
+.menubtn:hover {
+  background-color: blue;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/*footer*/
+
+.fo{
+       	margin-top: 20%;
+       	margin-left: -500;
+       	margin-right: -500;
+       	position: relative;
+         }
+
+		*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+
+	margin: auto;
+}
+.row{
+	display: inline;
+/*	flex-wrap: wrap;*/
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: cadetblue;
+	padding: 10px;
+
+}
+.footer-col{
+	width: 100%;
+	padding: 0 20px;
+/*	background-color: black;*/
+	float:right;
+}
+.footer-col {
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+/*	margin-bottom: 20px;*/
+	font-weight: 400;
+	position: relative;
+	background-color: cadetblue;
+}
+.footer-col h4 {
+	font-size: 18px;
+	color: navajowhite;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	font-weight: 400;
+	position: relative;
+}
+.footer-col h4 before{
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+	float:right;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.footer-col a:hover{
+	color: #24262b;
+	padding-left: 1px;
+}
+.footer-col ul li{
+	margin-bottom: 10px;
+}
+.footer-col ul li a hover{
+    color: #ffffff;
+/*    padding-left: 10px;*/
+}
+.footer-col .social-links a{
+       display: inline;
+       height: 10px;
+       width: 40px;
+       background-color: rgba(255, 255, 255, 0.2);
+      margin: 0 10px 10px 0;
+       text-align: center;
+       line-height: 40px;
+       border-radius: 50%;
+       color: #ffffff;
+       transition: all 0.5s ease;
+
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+
+}
+
+ #copyright{
+ 	width: 100%;
+ 	font-size: 20px;
+	text-align: center;
+	color: antiquewhite;}
+
+
+	
+
+
+</style>
+
+</head>
+ <!--topnav-->
+
+	<div class="hm">
+		<ul>
+
+			<img src="swt.png" class="logo">
+			<li><a href="#">about</a></li>
+			<li><a href="swt main page.html">home</a></li>
+		</ul>
+	</div>
+
+    <!-- side navbar-->
+
+	<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+
+		<a href="personal details.html">Personal details form</a>
+		<a href="education.html">Educational Details</a>
+		<a href="forms (1).html">Experience details</a>
+		<a href="Experience Certificate.html">Files upload</a>
+		<a href="Background Verification.html">Background Details</a>
+		<a href="Reference page.html">Reference</a>
+
+
+</div>
+
+<div id="main">
+  <button class="menubtn" onclick="menuNav()">☰ Menu</button>
+
+</div>
+
+<script>
+function menuNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+ document.getElementById("main").style.marginLeft= "0";
+ }
+</script>
+
+<!--personal details-->
+<body bgcolor="grey">
+<form>
+	<h1>Personal Details</h1>
+	<br>
+<hr>
+<br>
+<br>
+<div class="div1">
+<label for="fname">First name:</label>
+
+<input type="text" id="fname" name="name" placeholder="Enter your first name" required> </div>
+<div class="div1">
+<label for="mname">Middle name:</label>
+<input type="text" id="mname" name="name" placeholder="Enter your middle name" required> </div>
+
+<div class="div1">
+<label for="lname">Last name:</label>
+	<input type="text" id="lname" name="name" placeholder="Enter your last name" required>
+</div>
+<div class="div1">
+<label for="father">Father's name :</label>
+<input type="text" id="father" name="fathername" placeholder="Enter your father's name" required>
+</div>
+<div class="div1">
+<label for="mother">Mother's name :</label>
+<input type="text" id="mother" name="mothername" placeholder="Enter your mother'sname" required>
+</div>
+<div class="div1">
+<label for="mail">Email :</label>
+<input type="email" id="mail" name="email" placeholder="--------@gmail.com" required>
+</div>
+<div class="div1">
+<label for="pno">Mobile no:</label>
+<input type="number" id="number" name="phone"
+		    pattern="[0-9]{10}"placeholder="+91" required>
+</div>
+<div class="div1">
+<label for="ano">Alternate mobile no :</label>
+<input type="number" id="number" name="mobile"
+		    pattern="[0-9]{10}"placeholder="+91" required>
+</div>
+
+
+<div class="div1">
+<label for="caddr">Current address:</label>
+<textarea id="caddr" name="addr" rows="3" cols="17" required></textarea>
+
+</div>
+<div class=div1>
+<label for="paddr">Permanent address:</label>
+<textarea id="paddr" name="addr" rows="3" cols="17" required></textarea>
+</div>
+<div class="div1"><label>Gender:</label><br>
+		    <div class="div1" style="margin-right:40px ;">
+
+
+		    <label for="Male">Male</label>
+		    <input type="radio" name="gender" id="Male" required>
+
+
+		   <label for="female">Female</label>
+		   <input type="radio" name="gender" id="female" required>
+
+</div>
+</div>
+<div class="div1">
+<label for="mstatus">Marital status:</label>
+<select id="mstatus" name="mstatus" required>
+    <option value="select">select</option>
+    <option value="single">Single</option>
+    <option value="married">Married</option>
+</select>
+
+</div>
+<div class="div1">
+<label for="dob">DOB:</label>
+<input type="date" id="dob" name="date" placeholder="date of birth" required >
+</div>
+<div class="div1">
+
+	</div>
+	<div class="div1">
+	<label for="aadharnum">Aadhar Number:</label>
+	<input type="number" id="number" name="Enter Addhar Number" pattern="[0-9]{16}" required>
+
+</div>
+<div class="div1">
+			<label>Passport:</label><br>
+		    <div class="div1" style="margin-right:40px ;">
+
+
+		    <label for="yes">Yes</label>
+		    <input type="radio" name="yes" id="yes" required>
+
+
+
+		   <label for="no">No</label>
+		   <input type="radio" name="yes" id="no" required>
+		</div>
+		   </div>
+		   <div class="div1">
+	<label for="passportnum">Passport Number:</label>
+	<input type="text" id="passportnum" name="passport" pattern="[0-9][A-Z]{8}" required>
+
+</div>
+<div class="div1">
+<label for="edob">ExpiryDate:</label>
+<input type="date" id="edob" name="edate" placeholder="ExpiryDate" required >
+</div>
+		   <div class="div1">
+			<label for= "pfile" style="margin-top:10px;">Passport upload:</label>
+		    <input type="file" id="pfile" name="filename" accept="image/png,image/jpeg" required>
+		</div>
+
+<div class="div1">
+<label for= "myfile" style="margin-top:10px;">Passport size photo upload:</label>
+		    <input type="file" id="myfile" name="filename" accept="image/png,image/jpeg" required>
+</div>
+
+<br>
+
+
+<a href="hm.html" class="btn"> Previous</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<button type="submit" class="btn">Submit</button>
+<!-- <input type="button" value="Save& Next">
+<input type="button" value="Previous"></a> -->
+
+<section class="fo">
+
+	<footer class="footer">
+		<div>
+			<div class="row">
+
+
+				    <div id="copyright">
+		<p>© Copyright Senzwiz Technologies PVT LTD. All Rights Reserved</p></div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+
+</form>
+</body>
+</html>

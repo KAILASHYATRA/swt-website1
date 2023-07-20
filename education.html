@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EDUCATION DETAILS </title>
+    <link rel="stylesheet" type="text/css" href="education.css">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!--topnav-->
+
+    <div class="hm">
+        <ul>
+
+            <img src="swt.png" class="logo">
+            <li><a href="#">about</a></li>
+            <li><a href="swt main page.html">home</a></li>
+        </ul>
+    </div>
+
+    <!-- side navbar-->
+
+    <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+
+        <a href="personal details.html">Personal details form</a>
+        <a href="education.html">Educational Details</a>
+        <a href="forms (1).html">Experience details</a>
+        <a href="Experience Certificate.html">Files upload</a>
+        <a href="Background Verification.html">Background Details</a>
+        <a href="Reference page.html">Reference</a>
+
+
+</div>
+
+<div id="main">
+  <button class="menubtn" onclick="menuNav()">☰ Menu</button>
+
+</div>
+
+<script>
+function menuNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+ document.getElementById("main").style.marginLeft= "0";
+ }
+</script>
+
+
+
+
+
+   <div class="body">
+    <form>
+    <h1>Education details</h1>
+    <br>
+    <hr>
+    <br>
+    <br>
+ <!-- input type is text -->
+    <h2>Highest Qualification</h2>
+    <br>
+    <label for="Education">Name of qualification :</label>
+    <input list="Education" name="Education" placeholder="qualification" required>
+    <!-- select option for datalist -->
+<datalist name="Education" id="Education" class="box" required>
+    <option value="Diploma">
+    <option value="Graduation">
+    <option value="post graduation">
+    <option value="Ph.D">
+</datalist><br><br>
+    <!--year of passing-->
+<label for="year">Year of passing:</label>
+<select id="year" name="year of passing" class="box" required>
+    <option value="select">---select---</option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+    <option value="2019">2019</option>
+    <option value="2019">2018</option>
+    <option value="2019">2017</option>
+    <option value="2019">2016</option>
+    <option value="2019">2015</option>
+    <option value="2019">2014</option>
+    <option value="2019">2013</option>
+    <option value="2019">2012</option>
+    <option value="2019">2011</option>
+    <option value="2019">2010</option>
+    <option value="2019">2009</option>
+    <option value="2019">2008</option>
+    <option value="2019">2007</option>
+    <option value="2019">2006</option>
+    <option value="2019">2005</option>
+    <option value="2019">2004</option>
+    <option value="2019">2003</option>
+    <option value="2019">2002</option>
+    <option value="2019">2001</option>
+    <option value="2019">2000</option>
+    <option value="2019">1999</option>
+    <option value="2019">1998</option>
+    <option value="2019">1997</option>
+    <option value="2019">1996</option>
+    <option value="2019">1995</option>
+    <option value="2019">1994</option>
+    <option value="2019">1993</option>
+    <option value="2019">1992</option>
+    <option value="2019">1991</option>
+    <option value="2019">1990</option>
+    <option value="2019">1989</option>
+</select><br><br>
+<label for="fname">College name:</label>
+<input type="text" id="fname" name="fname" placeholder="College name" class="box" required>
+<br><br>
+<label for="percen">Percentage/ CGPA:</label>
+<input type="text" id="percen" class="box" name="percen" placeholder="Percentage/ CGPA" required>
+<br><br>
+<label for="myfile">File upload :</label>
+    <input type="file" id="myfile" class="box" name="myfile" ><br>
+    <br>
+     <h2>Second Qualification</h2>
+     <br>
+    <label for="quali">Name of qualification :</label>
+    <input list="quali" name="quali" class="box" placeholder="qualification" required><br><br>
+    <datalist id="quali">
+    <option value="Diploma">
+    <option value="Graduation">
+    </datalist>
+    <!--year of passing-->
+<label for="year">Year of passing:</label>
+<select id="year" name="year of passing" class="box" required>
+   <option value="select">---select---</option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+    <option value="2019">2019</option>
+    <option value="2019">2018</option>
+    <option value="2019">2017</option>
+    <option value="2019">2016</option>
+    <option value="2019">2015</option>
+    <option value="2019">2014</option>
+    <option value="2019">2013</option>
+    <option value="2019">2012</option>
+    <option value="2019">2011</option>
+    <option value="2019">2010</option>
+    <option value="2019">2009</option>
+    <option value="2019">2008</option>
+    <option value="2019">2007</option>
+    <option value="2019">2006</option>
+    <option value="2019">2005</option>
+    <option value="2019">2004</option>
+    <option value="2019">2003</option>
+    <option value="2019">2002</option>
+    <option value="2019">2001</option>
+    <option value="2019">2000</option>
+    <option value="2019">1999</option>
+    <option value="2019">1998</option>
+    <option value="2019">1997</option>
+    <option value="2019">1996</option>
+    <option value="2019">1995</option>
+    <option value="2019">1994</option>
+    <option value="2019">1993</option>
+    <option value="2019">1992</option>
+    <option value="2019">1991</option>
+    <option value="2019">1990</option>
+    <option value="2019">1989</option>
+</select><br><br>
+<label for="fname">College name:</label>
+<input type="text" id="fname" class="box" name="fname" placeholder="College name" required>
+<br><br>
+<label for="percen">Percentage/ CGPA:</label>
+<input type="text" id="percen" class="box" name="percen" placeholder="Percentage/ CGPA" required>
+<br><br>
+<label for="myfile">File upload :</label>
+    <input type="file" id="myfile" class="box" name="myfile"><br>
+    <br>
+    <h2>Intermediate</h2>
+    <br>
+    <label for="sub">Group :</label>
+    <input list="sub" class="box" name="sub" placeholder="--Select--" required><br><br>
+    <datalist name="sub" id="sub" class="box">
+    <option value="MPC">
+    <option value="Bipc">
+    <option value="CEC">
+    <option value="HEC">
+
+</datalist>
+    <!--year of passing-->
+<label for="year">Year of passing:</label>
+<select id="year" name="year of passing" class="box" required>
+    <option value="select">---select---</option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+
+    <option value="2019">2019</option>
+    <option value="2019">2018</option>
+    <option value="2019">2017</option>
+    <option value="2019">2016</option>
+    <option value="2019">2015</option>
+    <option value="2019">2014</option>
+    <option value="2019">2013</option>
+    <option value="2019">2012</option>
+    <option value="2019">2011</option>
+    <option value="2019">2010</option>
+    <option value="2019">2009</option>
+    <option value="2019">2008</option>
+    <option value="2019">2007</option>
+    <option value="2019">2006</option>
+    <option value="2019">2005</option>
+    <option value="2019">2004</option>
+    <option value="2019">2003</option>
+    <option value="2019">2002</option>
+    <option value="2019">2001</option>
+    <option value="2019">2000</option>
+    <option value="2019">1999</option>
+    <option value="2019">1998</option>
+    <option value="2019">1997</option>
+    <option value="2019">1996</option>
+    <option value="2019">1995</option>
+    <option value="2019">1994</option>
+    <option value="2019">1993</option>
+    <option value="2019">1992</option>
+    <option value="2019">1991</option>
+    <option value="2019">1990</option>
+    <option value="2019">1989</option>
+</select><br><br>
+<label for="sname">college name:</label>
+<input type="text" id="sname" class="box" name="sname" placeholder="School name" required>
+<br><br>
+<label for="percen">Percentage/ CGPA:</label>
+<input type="text" id="percen" class="box" name="percen" placeholder="Percentage/ CGPA" required>
+<br><br>
+<label for="myfile">File upload :</label>
+    <input type="file" id="myfile" class="box" name="myfile" required><br>
+    <br>
+         <h2>SSC</h2>
+         <br>
+    <label for="sub">Board of ssc :</label>
+    <select required>
+        <option>--select--</option>
+        <option>State board</option>
+        <option>Central board
+        </option>
+    </select><br><br>
+    <!--year of passing-->
+<label for="year">Year of passing:</label>
+<select id="year" name="year of passing" class="box" required>
+    <option value="select">---select---</option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+    <option value="2019">2019</option>
+    <option value="2019">2018</option>
+    <option value="2019">2017</option>
+    <option value="2019">2016</option>
+    <option value="2019">2015</option>
+    <option value="2019">2014</option>
+    <option value="2019">2013</option>
+    <option value="2019">2012</option>
+    <option value="2019">2011</option>
+    <option value="2019">2010</option>
+    <option value="2019">2009</option>
+    <option value="2019">2008</option>
+    <option value="2019">2007</option>
+    <option value="2019">2006</option>
+    <option value="2019">2005</option>
+    <option value="2019">2004</option>
+    <option value="2019">2003</option>
+    <option value="2019">2002</option>
+    <option value="2019">2001</option>
+    <option value="2019">2000</option>
+    <option value="2019">1999</option>
+    <option value="2019">1998</option>
+    <option value="2019">1997</option>
+    <option value="2019">1996</option>
+    <option value="2019">1995</option>
+    <option value="2019">1994</option>
+    <option value="2019">1993</option>
+    <option value="2019">1992</option>
+    <option value="2019">1991</option>
+    <option value="2019">1990</option>
+    <option value="2019">1989</option>
+</select><br><br>
+<label for="sname">School name:</label>
+<input type="text" id="sname" name="sname" class="box" placeholder="School name" required>
+<br><br>
+<label for="percen">Percentage/ CGPA:</label>
+<input type="text" id="percen" class="box" name="percen" placeholder="Percentage/ CGPA" required>
+<br><br>
+<label for="myfile">File upload :</label>
+    <input type="file" id="myfile" class="box" name="myfile" required><br>
+    <br>
+    <br>
+<div>
+    <center>
+    <a href="Personal details.html" class="btn"> Previous</a>
+    <button type="submit" class="btn">Submit</button>
+</center>
+    <!-- <input type="button" value="save&next" class="box1">
+    <input type="button" value="previous" class="box1"> -->
+</div>
+</div>
+</form>
+</div>
+/<!----footer part-->
+<section class="fo">
+
+    <footer class="footer">
+        <div>
+            <div class="row">
+
+
+                    <div id="copyright">
+        <p>© Copyright Senzwiz Technologies PVT LTD. All Rights Reserved</p></div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+</body>
+</html>
